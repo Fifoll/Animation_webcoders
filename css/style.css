@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-container{
+    width: 400px;
+    height: 400px;
+    background-color: lightgrey;
+}
+.div-move{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: move 5s infinite linear;
+}
+@keyframes move{
+    25%{
+        transform: translate(300px, 0);
+    }
+    50%{
+        transform: translate(300px, 300px);
+    }
+    75%{
+        transform: translate(0px, 300px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
